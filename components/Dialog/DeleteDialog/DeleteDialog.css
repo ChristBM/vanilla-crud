@@ -1,0 +1,21 @@
+.delete_dialog_container {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.delete_dialog_text {
+  width: 350px;
+  text-align: left;
+  font-size: 18px;
+  color: var(--white-color);
+}
+
+.delete_dialog_controls {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  justify-content: space-between;
+}

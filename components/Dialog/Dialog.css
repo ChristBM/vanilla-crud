@@ -1,0 +1,29 @@
+@import url('./CloseBtn/CloseBtn.css');
+@import url('./DeleteDialog/DeleteDialog.css');
+@import url('./DialogBtn/DialogBtn.css');
+@import url('./DetailsDialog/DetailsDialog.css');
+
+.dialog_container {
+  display: flex;
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  border: none;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 20px;
+  top: 200px;
+
+  outline: none;
+  background-color: var(--bg-blur-color);
+  backdrop-filter: blur(20px);
+  box-shadow: 3px 5px 15px var(--shadow-color);
+}
+
+.dialog__close_btn_container {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  justify-content: flex-end;
+}

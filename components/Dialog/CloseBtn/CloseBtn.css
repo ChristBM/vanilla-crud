@@ -1,0 +1,35 @@
+.dialog__close_btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  position: relative;
+  background: var(--default-color);
+  cursor: pointer;
+}
+
+.dialog__close_btn:hover {
+  background: var(--default-dark-color);
+}
+
+.close_btn_line {
+  width: 15px;
+  height: 0px;
+  border-top: 2px solid var(--white-color);
+  position: absolute;
+  top: 11.5px;
+  left: 5px;
+  transform: rotateZ(45deg);
+}
+
+.close_btn_line::after {
+  content: '';
+  width: 15px;
+  height: 0px;
+  border-top: 2px solid var(--white-color);
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  transform: rotateZ(90deg);
+}

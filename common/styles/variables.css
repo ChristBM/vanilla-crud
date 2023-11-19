@@ -1,0 +1,15 @@
+:root {
+  --white-color: #C8E0F4;
+  --black-color: #031927;
+  --error-color: rgba(186, 19, 0, 0.8);
+  --error-dark-color: rgb(186, 19, 0);
+  --success-color: rgba(0, 184, 80, 0.8);
+  --success-dark-color: rgb(0, 184, 80);
+  --gray-color: rgb(158, 210, 242);
+  --gray-dark-color: rgba(158, 210, 242, 0.5);
+  --default-color: rgb(9, 21, 100);
+  --default-dark-color: rgb(2, 10, 65);
+  --bg-blur-color: rgba(44, 44, 45, 0.5);
+  --shadow-color: rgba(48, 48, 48, 0.8);
+  --bg-gradient: linear-gradient(to right top, #ffffff, #e4e3ee, #c7c8dd, #a9aecd, #8a95bd, #7792be, #608fbe, #418cbc, #209dc5, #00adc9, #00bcc6, #29cabf);
+}

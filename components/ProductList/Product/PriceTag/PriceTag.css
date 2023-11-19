@@ -1,0 +1,38 @@
+.price_tag_container {
+  display: flex;
+  width: max-content;
+  height: 50px;
+  padding: 10px 10px 0px 10px;
+  border-radius: 0px 0px 10px 0px;
+  border-top: 2px solid var(--white-color);
+  border-left: 2px solid var(--white-color);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  gap: 3px;
+  background: transparent;
+  transition: background 200ms linear;
+}
+
+.price_tag_container:hover {
+  background: var(--black-color);
+  cursor: default;
+  transition: background 100ms linear;
+}
+
+.product__info_price {
+  color: var(--white-color);
+  font-family: 'Satisfy';
+  font-size: 28px;
+  text-shadow: 1px 0px 5px var(--black-color);
+}
+
+.product__info_currency {
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-family: 'Satisfy';
+  font-size: 16px;
+  text-shadow: 1px 0px 3px var(--black-color);
+}

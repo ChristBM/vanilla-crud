@@ -1,0 +1,48 @@
+.control_btn {
+  width: 100px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 0px 0px 0px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+  text-transform: capitalize;
+  color: var(--white-color);
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  transform: scale(1);
+  transition: transform 100ms ease-out;
+  user-select: none;
+}
+
+.control_btn:active {
+  transform: scale(0.95);
+  transition: transform 50ms linear;
+}
+
+.delete {
+  background-color: var(--error-color);
+}
+
+.delete:hover {
+  background-color: var(--error-dark-color);
+}
+
+.edit {
+  background-color: var(--success-color);
+}
+
+.edit:hover {
+  background-color: var(--success-dark-color);
+}
+
+.details {
+  border: 1px solid var(--gray-color);
+}
+
+.details:hover {
+  border: 1px solid var(--gray-dark-color);
+}

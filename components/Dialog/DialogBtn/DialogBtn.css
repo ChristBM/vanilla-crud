@@ -1,0 +1,35 @@
+.dialog_btn {
+  min-width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  padding: 2px 0px 0px 0px;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+  text-transform: capitalize;
+  color: var(--white-color);
+  font-size: 18px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  transform: scale(1);
+  transition: transform 100ms ease-out;
+  user-select: none;
+}
+
+.cancel_delete {
+  background: var(--default-color);
+}
+
+.cancel_delete:hover {
+  background: var(--default-dark-color);
+}
+
+.delete_product {
+  background-color: var(--error-color);
+}
+
+.delete_product:hover {
+  background-color: var(--error-dark-color);
+}

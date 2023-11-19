@@ -1,0 +1,21 @@
+.error_message_container {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.error_message, .info_message {
+  color: var(--error-color);
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.info_message {
+  color: var(--default-color);
+  font-size: 24px;
+}
