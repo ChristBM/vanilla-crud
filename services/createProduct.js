@@ -12,8 +12,9 @@ export default async function createProducts(callback, data) {
 
     const dat = await res.json()
 
-    if (res.ok) callback(dat)
+    if (res.status === 201) callback(dat)
   } catch (error) {
+    callback(false)
     throw new Error(error)
   }
 }

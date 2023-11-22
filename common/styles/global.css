@@ -5,6 +5,8 @@
 @import url('../../components/Loader/Loader.css');
 @import url('../../components/ErrorMessage/ErrorMessage.css');
 @import url('../../components/Dialog/Dialog.css');
+@import url('../../components/Dialog/CreateDialog/CreateDialog.css');
+@import url('../../components/TextField/TextField.css');
 
 * {
   box-sizing: border-box;
