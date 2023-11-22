@@ -1,42 +1,77 @@
+import { readLocalStorage } from "../../../common/utils/handleLocalStorage.js";
+import { STORAGE_KEY_CATEGORIES } from "../../../vars.js";
+import TextField from "../../TextField/TextField.js";
 
 export default function CreateDialog(id) {
+  const categoriesIds = readLocalStorage(STORAGE_KEY_CATEGORIES).map(({id}) => id).join(', ')
+  const categoryFieldSubtitle = `Available ids: (${categoriesIds})`
+
   return `
     <form id="create-new-product-form" class="create_dialog_container">
-      <section>
-        <h3>Create New Product</h3>
+      <section class="create_dialog__title_container">
+        <h3 class="create_dialog__title">Create New Product</h3>
       </section>
 
-      <section>
-        <label for="title-new-product">
-          Title
-          <input type="text" id="title-new-product" data-set="title" name="title-new-product">
-        </label>
+      <section class="create_dialog__form_container">
+        <div class="create_dialog__form_wrapper">
+          ${TextField({
+            id: 'title-new-product',
+            type: 'text',
+            label: 'Title',
+            placeholder: 'Add the title here',
+          })}
 
-        <label for="price-new-product">
-          Price
-          <input type="number" id="price-new-product" data-set="price" name="price-new-product" min="0" max="1000">
-        </label>
+          ${TextField({
+            id: 'price-new-product',
+            type: 'number',
+            label: 'Price',
+            placeholder: 'Add the price here',
+          })}
 
-        <label for="description-new-product">
-          Description
-          <textarea name="description-new-product" data-set="description" id="description-new-product" cols="30" rows="10"></textarea>
-        </label>
+          ${TextField({
+            id: 'description-new-product',
+            type: 'text',
+            label: 'Description',
+            placeholder: 'Add the description here',
+          })}
+        </div>
 
-        <label for="category-id-new-product">
-          Category Id
+        <div class="create_dialog__form_wrapper">
+          ${TextField({
+            id: 'image-new-product-1',
+            type: 'url',
+            label: 'Image URL 1',
+            placeholder: 'Add the image url 1 here',
+          })}
 
-          <select name="category-id-new-product" id="category-list-select">
-          </select>
-        </label>
+          ${TextField({
+            id: 'image-new-product-2',
+            type: 'url',
+            label: 'Image URL 2',
+            placeholder: 'Add the image url 2 here',
+          })}
 
-        <label for="image-new-product">
-          Image
-          <input type="url" id="image-new-product" data-set="images" name="image-new-product">
-        </label>
+          ${TextField({
+            id: 'image-new-product-3',
+            type: 'url',
+            label: 'Image URL 3',
+            placeholder: 'Add the image url 3 here',
+          })}
+        </div>
       </section>
 
-      <section>
-        <button type="submit">Create</button>
+      <section class="create_dialog__form_categories">
+        ${TextField({
+          id: 'category-id-new-product',
+          type: 'number',
+          label: 'Category Id',
+          subtitle: categoryFieldSubtitle,
+          placeholder: 'Add the category id here',
+        })}
+      </section>
+
+      <section class="create_dialog__submit_container">
+        <button type="submit" class="create_dialog__submit_btn">Create</button>
       </section>
     </form>
   `

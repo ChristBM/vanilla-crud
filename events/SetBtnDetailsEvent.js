@@ -1,3 +1,4 @@
+import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/+esm'
 import { readLocalStorage, saveInLocalStorage } from "../common/utils/handleLocalStorage.js"
 import DetailsDialog from "../components/Dialog/DetailsDialog/DetailsDialog.js"
 import RenderDialog from "../render/RenderDialog.js"
@@ -15,7 +16,13 @@ function handleProductData(product) {
       children: DetailsDialog,
       id: prodId
     })
-  } else console.log(failMsn)
+  } else {
+    Swal.fire({
+      title: "Oops, an error occurred!",
+      text: failMsn,
+      icon: "error"
+    });
+  }
 }
 
 export function handleDetailBtnClick(e) {
