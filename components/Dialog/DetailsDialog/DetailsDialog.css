@@ -23,6 +23,7 @@
 
 .details_dialog__info {
   display: flex;
+  min-width: 250px;
   width: max-content;
   height: max-content;
   flex-direction: column;
