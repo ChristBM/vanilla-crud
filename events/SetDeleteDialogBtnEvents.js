@@ -29,6 +29,7 @@ function deleteCallback(deleted) {
     });
 
     setTimeout(() => {
+      Swal.close()
       window.location.reload(false)  //reload the page
     }, 1500)
   } else {

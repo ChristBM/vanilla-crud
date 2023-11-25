@@ -1,0 +1,59 @@
+.edit_dialog_container {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  padding: 15px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.edit_dialog__title_container {
+  display: flex;
+  justify-content: center;
+}
+
+.edit_dialog__title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--white-color);
+}
+
+.edit_dialog__form_container {
+  display: grid;
+  grid-template-columns: repeat(2, 220px);
+  gap: 15px;
+}
+
+.edit_dialog__form_wrapper {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit_dialog__submit_container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.edit_dialog__submit_btn {
+  width: 100px;
+  height: 41px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--success-color);
+  color: var(--white-color);
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.edit_dialog__submit_btn:hover {
+  background-color: var(--success-dark-color);
+}

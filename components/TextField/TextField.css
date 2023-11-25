@@ -29,3 +29,7 @@
   font-size: 16px;
   color: var(--white-color);
 }
+
+.text_field__input::placeholder {
+  color: var(--gray-dark-color);
+}
